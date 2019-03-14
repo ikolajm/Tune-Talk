@@ -12,13 +12,9 @@ import { UserComponent } from './components/user/user.component';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/home/auth/login/login.component';
 import { SignupComponent } from './components/home/auth/signup/signup.component';
-<<<<<<< HEAD
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-=======
 import { AlertComponent } from './components/alert/alert.component';
 import { CommunityComponent } from './components/community/community.component';
 
->>>>>>> 57c55e2407a29531e11cd97f125d1b0d4aaeee06
 
 
 
@@ -35,25 +31,16 @@ import { CommunityComponent } from './components/community/community.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-<<<<<<< HEAD
     HttpClientModule,
-    BrowserAnimationsModule
-=======
+    BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-<<<<<<< HEAD
-    NgbModule
-    
->>>>>>> 57c55e2407a29531e11cd97f125d1b0d4aaeee06
-=======
     NgbModule,
     BrowserAnimationsModule
-    // NoopAnimationsModule uncomment this to disable Material Animations
->>>>>>> 7584b347f21a15deaa5fae279be7e93397f1393b
   ],
   providers: [],
   bootstrap: [AppComponent],
-  entryComponents: [ SignupComponent ]
+  entryComponents: []
 })
 export class AppModule { }
