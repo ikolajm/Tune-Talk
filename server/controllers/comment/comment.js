@@ -67,7 +67,7 @@ router.delete('/comment/delete/:id', (req, res) => {
 })
 
 // Delete comment (admin
-router.delete('/comment/delete/:id', (req, res) => {
+router.delete('/comment/delete/:id/admin', (req, res) => {
     if (req.user.role === 'admin') {
         db.Comment.destroy({
             where: { id: req.params.id }

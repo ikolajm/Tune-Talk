@@ -26,7 +26,7 @@ router.post('/playlist/:plId/song/add', (req, res) => {
     })
 })
 
-// Edit comment
+// Edit song
 router.put('/song/edit/:id', (req, res) => {
     db.Song.update({
         name: req.body.name,
@@ -51,7 +51,7 @@ router.put('/song/edit/:id', (req, res) => {
     })
 })
 
-// Delete comment
+// Delete song
 router.delete('/song/delete/:id', (req, res) => {
     db.Song.destroy({
         where: { userId: req.user.id, id: req.params.id }
@@ -70,8 +70,8 @@ router.delete('/song/delete/:id', (req, res) => {
     })
 })
 
-// Delete comment (admin
-router.delete('/song/delete/:id', (req, res) => {
+// Delete song (admin)
+router.delete('/song/delete/:id/admin', (req, res) => {
     if (req.user.role === 'admin') {
         db.Song.destroy({
             where: { id: req.params.id }
